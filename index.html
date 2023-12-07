@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(239, 239, 239);
+        }
+        .main{
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+        header{
+            width: 10px;
+            height:10px;
+            /* border: solid; */
+            display: flex;
+            margin-top: 51px;
+            gap: 40px;
+            background-color: white;
+            align-items: center;
+        }
+        .primary text{
+            font-family: inter_regular,fallback-inter_regular,Arial,sans-serif;
+            padding-top: 100px;
+        }
+        header .search{
+            width: 700px;
+            height: 30px;
+            background-color: white;
+            gap: 5px;
+            align-items: center;
+            display: flex;
+           
+            
+        }
+        .search input[type="text"]{
+            border: 0;
+            outline: 0 none;
+            font-size: 17px;
+            height: 30px;
+            width: 600px;
+            background-color:white;
+            border: none;
+           
+
+        }
+        header .login,.cart,.seller,.dots{
+            display: flex;
+            align-items: center;
+            gap: 4px;
+
+        }
+        .login:hover .-dOa_bXdYXbi{
+            transform: rotate(180deg);
+            transition: transform 0.2s ease-out;
+        }
+        .kali{
+            height: 35px;
+            width: 100%;
+            background-color: aliceblue;
+        }
+        .rice image{
+            width: 50px;
+            height:40px;
+            /* border: solid; */
+            display: flex;
+            margin-top: 450px;
+            gap: 40px;
+            background-color: white;
+            align-items: center;
+        }
+        .main box{
+            width: 50px;
+            height:40px;
+            /* border: solid; */
+            display: flex;
+            margin-top: 650px;
+            gap: 40px;
+            background-color: white;
+            align-items: center;
+        
+        }
+        .box2{
+            margin-left: -500px ;
+            margin-top: 50px;
+        }
+        .box3{
+            margin-left: 550px;
+            margin-top: -140px;
+        }
+        /* .box1{
+            height: 50px;
+            width: 50px;
+            margin-top: 50px;
+
+        } */
+        .box4{
+            margin-left: -500px ;
+            margin-top: -150px;
+        }
+        .box5{
+            margin-left: 20px;
+            margin-top: -155px;
+            display: flex;
+        }
+        .box6{
+            margin-left: 20px;
+            margin-top: -265px;
+            display: flex;
+        }
+        .kali2{
+            height: 150px;
+            width: 100%;
+            /* background-color: white; */
+        }
+        .main_Best_of_rice {
+            font-family: inter_regular,fallback-inter_regular,Arial,sans-serif;
+            font-size: 15px;
+            height: 550px;
+            width: 100%;
+            background-color: white;
+            margin-top: 14px;
+            /* margin-left: 90px; */
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+        .feature of rice  h3{
+            margin-top: 785px;
+            margin-left: 90px;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+        .Best_of_electronics, .Best_of_electronics1{
+            font-family: inter_semi_bold,fallback-inter_semi_bold,Arial,sans-serif;
+            font-size: 15px;
+            height: 300px;
+            width: 100%;
+            background-color: white;
+        
+            margin-top: 12px;
+            display: flex;
+            justify-content: space-around;
+
+        }
+        .Best_of_electronics_images{
+            width: 250px;
+            height: 231px;
+            /* border: 0.5px  solid gray; */
+            text-align: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .Best_of_electronics_images img{
+            height: 180px;
+            width: 100px;
+
+        } 
+        .Best_of_electronics_images img:hover{
+            transform: scale(1.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .Best_of_electronics_images1 img:hover{
+            transform: scale(1.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .kali3{
+            height: 50px;
+            width: 200px;
+        }
+        /* /* about of rice */
+
+
+    .aboutterm{
+    width: 25%  ;
+    height: 250px;
+    background-color: rgb(32, 32, 32);
+    margin: 0;
+    
+    
+    }
+.aboutterm p{
+    color: gray;
+    margin-left: 10px;
+    font-size: 13px;
+    
+}
+.aboutterm h6{
+    color: white;
+    margin-left: 10px;
+    font-size: 13px;
+    line-height: 13px;
+    
+}
+.help{
+    width: 25%;
+    height: 250px;
+    margin-left: 110px;
+    background-color: rgb(32, 32, 32);
+    margin-top: -263px;
+}
+.help p{
+    color: gray;
+    margin-left: 110px  ;
+    font-size: 13px;
+}
+.help h6{
+    color: white;
+    margin-left: 110px;
+    font-size: 13px;
+    line-height: 13px;
+}
+.consumer{
+    background-color: rgb(32, 32, 32);
+    width: 25%;
+    height: 250px;
+    margin-left: 400px;
+    margin-top: -263px;
+}
+.consumer p{
+    color: gray;
+    margin-left: 80px;
+    font-size: 13px;
+}
+.consumer h6{
+    color: white;
+    margin-left: 80px;
+    font-size: 13px;
+    line-height: 13px;
+}
+.social{
+    background-color: rgb(32, 32, 32);
+    width: 25%;
+    height: 250px;
+    margin-left: 550px;
+    margin-top: -263px;
+}
+.social p{
+    color: gray;
+    margin-left: 150px;
+    font-size: 13px;
+}
+.social h6{
+    color: white;
+    margin-left: 150px;
+    font-size: 13px;
+    line-height: 13px;
+}
+.line{
+    width: 0;
+    height: 180px;
+    border: 0.1cap gray solid;
+    margin-left: 764px;
+    margin-top: -220px;
+}
+.mail{
+    background-color: rgb(32, 32, 32);
+    width: 25%;
+    height: 250px;
+    margin-left: 835px;
+    margin-top: -225px; 
+}
+.mail p{
+    color: gray;
+    margin-left: -50px;
+    font-size: 13px;
+}
+.mail h6{
+    color: white;
+    margin-left: -50px;
+    font-size: 13px;
+    line-height: 13px;
+}
+.office{
+    background-color: rgb(32, 32, 32);
+    width: 15.9%;
+    height: 250px;
+    margin-left: 1125px;
+    margin-top: -263px; 
+}
+.office p{
+    color: gray;
+    margin-left: -45px;
+    font-size: 13px;
+}
+.office h6{
+    color: white;
+    margin-left: -25px;
+    font-size: 13px;
+    line-height: 13px;
+}
+.bgblack{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(32, 32, 32);
+    /* margin-left: 9px; */
+}
+</style>
+</head>
+<body>
+    <div class="ricelogo">
+        <header><img src="https://img.freepik.com/premium-vector/premium-rice-great-quality-design-concept_268722-78.jpg?w=740" alt="" height="80px" width="140px">
+            <div class="search">
+                <svg width="24" height="24" class="" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Search Icon</title><path d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z" stroke="#717478" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 16L21 21" stroke="#717478" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            
+                <input type="text" value="" class="Pke_EE" title="Search for Products, Brands and More" name="q" autocomplete="off" placeholder="Search for Raw Rice,Boiled Rice,Steam Rice,Tiffen Rice,Oragin Rice"></div>
+            
+            
+            <div class="login"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg" alt="Login" class="-dOa_b L_FVxe" width="24" height="24"><p class="primary text">login</p><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNCAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjBfZF80OTc0Xzc1OTY5KSI+CjxwYXRoIGQ9Ik0zIDJMNyA2TDExIDIiIHN0cm9rZT0iIzExMTExMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8ZmlsdGVyIGlkPSJmaWx0ZXIwX2RfNDk3NF83NTk2OSIgeD0iMC4yNSIgeT0iMC4yNSIgd2lkdGg9IjEzLjUiIGhlaWdodD0iOS44MTI1IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHk9IjEiLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMSIvPgo8ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMC4xNiAwIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93XzQ5NzRfNzU5NjkiLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfNDk3NF83NTk2OSIgcmVzdWx0PSJzaGFwZSIvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8L3N2Zz4K" alt="Chevron" class="-dOa_bXdYXbi" width="12" height="12"></div>
+    
+              <div class="cart"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" alt="Cart" class="_1XmrCc" width="24" height="24"><p class="primary text">Cart</p></div>
+             
+              <div class="seller"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg" alt="Become a Seller" class="_1XmrCc"><p class="primary text">Become a Seller</p></div>
+             
+             <div class="dots"><img class="-dOa_b" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg" width="24" height="24" alt="Dropdown with more help links">
+            </div>
+        </header>
+
+
+    </div>
+    <div class="kali"></div>
+    <div class="rice image"><img src="basumathi.jpg.png" alt="" height="490px" width="100%"></div>
+
+    <div class="main box">
+        <!-- <div class="box1"><img src="https://www.netmeds.com/images/cms/wysiwyg/blog/2020/09/1599465801_Basmati_big_2.jpg" alt="" height="250px" width="250px"></div> -->
+        <div class="box2"> <img src="Screenshot 2023-11-29 115717.png" alt=""></div><br>
+        <div class="box3"><img src="box2.html.png" alt=""></div><br>
+        <div class="box4"><img src="box4.jpg.png" alt=""></div><br>
+        <div class="box5"><img src="https://www.netmeds.com/images/cms/wysiwyg/blog/2020/09/1599465801_Basmati_big_2.jpg" alt="" height="130px" width="250px"></div>
+
+        <div class="box6"><img src="box5.html.png" alt="" height="130px" width="235px"></div>
+    </div>
+    <div class="kali2"></div>
+    <div class="feature of rice">
+        <h3>FEATURED PRODUCTS</h3>
+    </div>
+        <div class="main_Best_of_rice">
+            
+         <div class="Best_of_electronics">
+            <!-- <h3>Best Of Electronics</h3> -->
+            <div class="Best_of_electronics_images" ><img src="basu..jpg" alt="" style="width: 245px;">Basmati Organic Rice<br>From ₹1500</div>
+            <div class="Best_of_electronics_images"><img src="bag11.jpg" alt="" style="width: 200px;" >Basmati Rice <br>From ₹1890</div>
+            <div class="Best_of_electronics_images"><img src="bag6.jpg" alt="" style="width: 250px;">Basmati Rice <br>From ₹1200</div>
+            <div class="Best_of_electronics_images"><img src="bag8.jpg" alt="" style="width: 250px;">Basmati Rice <br>From ₹1580</div> <br>
+            <br>
+           </div>
+           <div class="Best_of_electronics1">
+            <!-- <h3>Best Of Electronics</h3> -->
+            <div class="Best_of_electronics_images1"><img src="bag1.jpg" alt=""> <br>India Gate Basmati Rice <br>From ₹1500</div>
+            <div class="Best_of_electronics_images1"><img src="bag9.jpg" alt=""><br>India Gate Basmati Rice <br>From ₹1750</div>
+            <div class="Best_of_electronics_images1"><img src="bag3.jpg" alt=""> <br>India Gate Basmati Rice <br>From ₹1250</div>
+            <div class="Best_of_electronics_images1"><img src="bag15.jpg" alt="" style="width: 140px;"> <br>India Gate Basmati Rice  <br>From ₹1580</div> <br> <br>
+           </div>
+        </div>
+
+           <div class="kali3"> </div>
+           <div class="rice img11">
+                <!-- <h1>ABOUT BASUMATI</h1> -->
+           <img src="about4.png" alt="" height="450px" width="100%" ></div>
+
+           <div class="aboutterm">
+            <p>ABOUT</p>
+            <h6>Contact Us</h6>
+            <h6>About Us</h6>
+            <h6>Careers</h6>
+            <h6>Basmati Stories</h6>
+            <h6>Press</h6>
+            <h6>Basmati Wholesale</h6>
+            <h6>Cleartrip</h6>
+            <h6>Corporate Information</h6>
+          </div>
+          <div class="help">
+            <p>HELP</p>
+            <h6>Payments</h6>
+            <h6>Shopping</h6>
+            <h6>Cancellation & Returns</h6>
+            <h6>FAQ</h6>
+            <h6>Report Infringement</h6>
+    
+          </div>
+          <div class="consumer">
+            <p>CONSUMER POLICY</p>
+            <h6>Cancellation and Returns</h6>
+            <h6>Terms of Use</h6>
+            <h6>Security</h6>
+            <h6>Privacy</h6>
+            <h6>Sitemap</h6>
+            <h6>Grievance Redressal</h6>
+            <h6>EPR Compliance</h6>
+          </div>
+          <div class="social">
+            <p>SOCIAL</p>
+            <h6>Facebook</h6>
+            <h6>Instagram</h6>
+            <h6>Youtube</h6>
+          </div>
+          <div class="line">
+            
+          </div>
+          <div class="mail">
+            <p>Mail Us:</p>
+            <h6>Basmati Rice Private Limited,</h6>
+            <h6>Buildings Alyssa,Begonia &</h6>
+            <h6>Clove Embassy Tech Village,</h6>
+            <h6>Outer Ring Road,Devarabeesanahalli Village,</h6>
+            <h6>Bengaluru-560103</h6>
+            <h6>Karnataka,India</h6>
+          </div>
+          <div class="office">
+            <p>Registered Office Adress</p>
+            <h6>Basmati Rice Private Limited,</h6>
+            <h6>Buildings Alyssa,Begonia &</h6>
+            <h6>Clove Embassy Tech Village,</h6>
+            <h6>Outer Ring Road,Devarabeesanahalli Village,</h6>
+            <h6>Bengaluru-560103</h6>
+            <h6>Karnataka,India</h6>
+            <h6>CIN:U51109KA2012PTC066107</h6>
+            <h6>Telephone: 044-45614700</h6>
+          </div>
+        </div>
+</body>
+</html>
